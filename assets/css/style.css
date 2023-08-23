@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, ul {
+    margin: 40px;
+}
+
+li:hover {
+    background-color: white;
+    color: black;
+}
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none ;
+    background-color: black;
+    color: white;
+}
+li {
+    padding: 1.2rem;    
+}
+
+
+h1 {
+    color:rgb(226, 219, 219);
+    text-shadow: 1px 2px 2px black, 0 0 25px blue , 0 0 5px blue;
+    text-align: center;
+
+}
+div.container{
+    display: flex;
+    /*flex-wrap: nowrap;  /*imagenes horizontal*/
+    flex-wrap: wrap;  /*imagenes vertical*/
+    
+    max-width: 100vw;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background: linear-gradient(rgba(229, 231, 232, 0.8), rgba(175, 171, 175, 0.8));*/
+}
+
+.box img{
+    width: 350px;  /*3 imagenes por fila   450px 2 imagenes por fila*/
+    height: 220px;
+    object-fit: cover;  /*redeimensionar se parea ajustarse a su contenedor*/
+    object-position: center;
+    padding: 6px;
+    
+}
+
+div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    padding: 10px;
+
+}
+
+img:hover{   /* efecto de hacer hover sobre la imagen, cuando se posiciona el puntero del raton sobre un  objeto*/
+    cursor: pointer;  /* se crea un puntero sobre la imagen */
+    opacity: 0.7;
+    transform: scale(1.05);
+    transform: rotate(-3deg) scale(1.05);  /*especie de rotacion sobre la imagen*/
+    transition: 0.6s ease-out; 
+    filter: grayscale(0.9);  /*efecto blanco y negro sobre la imagen*/
+
+}
+.box p{
+    text-align: center;
+}
+
+
+
